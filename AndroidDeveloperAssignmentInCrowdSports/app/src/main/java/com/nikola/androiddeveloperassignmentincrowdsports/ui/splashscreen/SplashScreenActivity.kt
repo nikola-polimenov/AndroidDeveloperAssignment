@@ -20,7 +20,7 @@ class SplashScreenActivity : AppCompatActivity() {
     private val constants: Constants = Constants()
     private var matchCheck:Boolean = false
     private var matchCommentaryCheck:Boolean = false
-    var bundle: Bundle = Bundle()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,8 +40,7 @@ class SplashScreenActivity : AppCompatActivity() {
             true -> {
                 when(matchCommentaryCheck) {
                     true -> {
-                        bundle = bundleOf("currentMatch" to splashScreenViewModel.currentMatch,
-                            "currentMatchCommentary" to splashScreenViewModel.currentMatchCommentary)
+
 
                     }
                 }
@@ -50,7 +49,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
 
         Handler().postDelayed({
-            startActivity(Intent(this, MainActivity::class.java), bundle)
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         },splashTimeOut)
 
