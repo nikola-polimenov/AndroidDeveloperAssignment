@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android Developer Assignment InCrowdSports</string>
+    <string name="intro">Something, something, something</string>
+    <string name="home_team_image">home_team_image</string>
+    <string name="away_team_image">away_team_image</string>
+    <string name="home_team_name">home_team_name</string>
+    <string name="away_team_name">away_team_name</string>
+    <string name="vs">VS</string>
+</resources>
