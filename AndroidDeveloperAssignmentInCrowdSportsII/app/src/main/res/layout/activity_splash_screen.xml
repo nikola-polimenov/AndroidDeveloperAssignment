@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/premier_league_720x1280"
     tools:context=".ui.splashscreen.SplashScreenActivity">
 
     <TextView
@@ -11,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="@string/intro"
+        android:text=""
         android:textAlignment="center"
         android:textSize="50sp"
         android:textStyle="bold"

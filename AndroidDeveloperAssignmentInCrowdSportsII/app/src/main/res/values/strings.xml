@@ -6,4 +6,9 @@
     <string name="home_team_name">home_team_name</string>
     <string name="away_team_name">away_team_name</string>
     <string name="vs">VS</string>
+    <string name="list_of_team_players">Show List of team players</string>
+    <string name="footballer_name">footballer_name</string>
+    <string name="player_position">player_position</string>
+    <string name="shirt_number">shirt_number</string>
+    <string name="captain_star">captain_star</string>
 </resources>

@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
     app:startDestination="@id/matchInfoFragment">
 
     <fragment
         android:id="@+id/matchInfoFragment"
-        android:name="com.nikola.androiddeveloperassignmentincrowdsportsii.ui.main.fragments.matchinfo.MatchInfoFragment"
-        android:label="MatchInfoFragment" />
+        android:name="com.nikola.assignment.ui.main.fragments.matchinfo.MatchInfoFragment"
+        android:label="MatchInfoFragment" >
+        <action
+            android:id="@+id/action_matchInfoFragment_to_teamInfoFragment"
+            app:destination="@id/teamInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamInfoFragment"
+        android:name="com.nikola.assignment.ui.main.fragments.teamInfo.TeamInfoFragment"
+        android:label="TeamInfoFragment" >
+        <action
+            android:id="@+id/action_teamInfoFragment_to_listOfPlayersFragment"
+            app:destination="@id/listOfPlayersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listOfPlayersFragment"
+        android:name="com.nikola.assignment.ui.main.fragments.listofplayers.ListOfPlayersFragment"
+        android:label="fragment_list_of_players"
+        tools:layout="@layout/fragment_list_of_players" />
 </navigation>
