@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.lifecycle.ViewModelProviders
 import com.nikola.assignment.R
 
+
 class MainActivity : AppCompatActivity() {
     private lateinit var mainViewModel: MainViewModel
     //private val tag = "MainActivity: Testing"
@@ -13,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
+
+
 
     }
 

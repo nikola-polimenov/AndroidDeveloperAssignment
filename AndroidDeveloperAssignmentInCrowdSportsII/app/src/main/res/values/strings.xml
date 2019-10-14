@@ -11,4 +11,6 @@
     <string name="player_position">player_position</string>
     <string name="shirt_number">shirt_number</string>
     <string name="captain_star">captain_star</string>
+    <string name="team_stat">team_stat</string>
+    <string name="team_stats_throughout_the_match">Team stats throughout the match:</string>
 </resources>
